@@ -18,10 +18,7 @@ class ViewController: UIViewController {
     @IBAction func exitCancel(segue:UIStoryboardSegue) {
     }
     
-    @IBAction func exitDone(segue:UIStoryboardSegue) {
-        let yellow = segue.source as! YellowViewController
-        self.blueLabel.text = yellow.YellowText.text
-    }
+
     @IBAction func tokyoButton(segue:UIStoryboardSegue) {
         _ = segue.source as! YellowViewController
         self.blueLabel.text = "東京都"
